@@ -50,13 +50,12 @@ a {
 /* keyvisual */
 
 .keyvisual {
-  background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/contain;
+  background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
+  padding: 400px 0;
 }
 
 .main_inner {
   text-align: center;
-  align-items: center;
-  padding: 400px 0;
 }
 
 .main_title, .sub_title {
