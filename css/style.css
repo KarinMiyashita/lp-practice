@@ -219,14 +219,14 @@ li:hover {
 
 .fab:hover, .fa-solid:hover {
   transition: 0.3s;
-  color: #fff;
+  background-color: #fff;
 }
 
 /* ここまでメイン */
 
 /* ここからフッター */
 
-#footer {
+.footer {
   background: #cfd8dc;
 }
 
