@@ -8,6 +8,13 @@ a {
 .inner {
   max-width: 1100px;
   margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px){
+  .inner {
+    width: 97%;
+  }
 }
 
 .header_inner, .work_inner {
@@ -19,6 +26,9 @@ a {
 .header {
   background-color: #fff;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
 }
 
 .header_inner {
@@ -36,11 +46,48 @@ a {
   font-size: 12px;
   padding: 12px 14px;
   text-align: center;
+  display: block;
 }
 
 .contact:hover {
   transition: 0.3s;
   color: #333;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 767px){
+  .contact{
+    display: none;
+  }
+
+  .hamburger {
+    width: 55px;
+    height: 45px;
+    background: #fff;
+    border: 2px solid #cfd8dc;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger_bar {
+    width: 30px;
+    height: 4px;
+    background: #cfd8dc;
+    margin:0 auto;
+    display: block;
+  }
+
+  .hamburger_bar:nth-child(1), .hamburger_bar:nth-child(3) {
+    top: 0;
+  }
+
+  .hamburger_bar:nth-child(2) {
+    margin: 7px auto;
+  }
 }
 
 /* ここまでヘッダー */
@@ -52,6 +99,18 @@ a {
 .keyvisual {
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   padding: 400px 0;
+}
+
+@media screen and (max-width: 1199px){
+  .keyvisual {
+    padding: 250px 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .keyvisual {
+    padding: 200px 0;
+  }
 }
 
 .main_inner {
@@ -73,6 +132,17 @@ a {
   font-size: 40px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 767px){
+  .main_title {
+    font-size: 40px;
+  }
+
+  .sub_title {
+    font-size: 30px;
+  }
+}
+
 
 /* work */
 
@@ -107,12 +177,23 @@ a {
   word-break: break-all;
 }
 
+@media screen and (max-width: 1199px){
+  .work {
+    width: 100%;
+    padding: 50px 0;
+  }
+
+  .work_inner {
+    display: block;
+  }
+}
+
 /* skills */
 
 .skills {
   background: #fff;
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 .skills_text {
@@ -152,6 +233,21 @@ li:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 1199px){
+  .skills_list {
+    display: block;
+  }
+
+  .skills_item {
+    text-align: center;
+    margin: 0;
+  }
+
+  li:nth-child(4n) {
+    margin-top: 70px;
+  }
+}
+
 /* plan */
 
 .plan {
@@ -165,7 +261,7 @@ li:hover {
 
 .plan_table {
   table-layout: fixed;
-  width: 1100px;
+  width: 100%;
 }
 
 .plan_table th {
@@ -181,10 +277,23 @@ li:hover {
 }
 
 .plan_table th, .plan_table td {
+  width: auto;
+  max-width: 25%;
   border-left: 2px solid #fff;
   padding: 10px;
   font-size: 16px;
   line-height: 26px;
+}
+
+@media screen and (max-width: 767px){
+  .plan_table th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .plan_table td {
+    font-size: 12px;
+  }
 }
 
 .plan_table tr:nth-child(even) {
@@ -220,6 +329,20 @@ li:hover {
 .fab:hover, .fa-solid:hover {
   transition: 0.3s;
   background-color: #fff;
+}
+
+@media screen and (max-width: 767px){
+  .sns {
+    display: block;
+    margin: 0 auto;
+    padding: 50px 15px;
+  }
+
+  .fab, .fa-solid {
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+  }
 }
 
 /* ここまでメイン */
