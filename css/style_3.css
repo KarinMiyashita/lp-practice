@@ -205,6 +205,7 @@ a {
 
   .photo_grid img {
     height: 180px;
+    opacity: 1;
   }
 }
 

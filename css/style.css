@@ -378,6 +378,10 @@ li:hover {
 }
 
 @media screen and (max-width: 1199px){
+  .photo_item {
+    opacity: 1;
+  }
+
   .photo_list {
     display: block;
   }
