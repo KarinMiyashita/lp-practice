@@ -9,109 +9,91 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
 <body>
+  <a id="top"></a>
   <header class="header"> <!-- 背景・余白 -->
   <section class="header_inner inner">
-    <i class="fas fa-archway fa-3x"></i>
-      <a class="contact" href="#">contact</a>
-      <button class="hamburger">
-        <span class="hamburger_bar"></span>
-        <span class="hamburger_bar"></span>
-        <span class="hamburger_bar"></span>
-      </button>
+    <a href="#top">
+      <i class="fa-home"></i>
+    </a>
+    <a class="contact" href="#">contact</a>
+    <button class="hamburger" id="js-hamburger">
+      <span class="hamburger_bar"></span>
+      <span class="hamburger_bar"></span>
+      <span class="hamburger_bar"></span>
+    </button>
+    <nav class="navigation">
+      <ul class="navigation_list">
+        <li class="navigation_list_item"><a href="index.html" class="navigation_link">home</a></li>
+        <li class="navigation_list_item"><a href="3.html" class="navigation_link">2022.3</a></li>
+        <li class="navigation_list_item"><a href="4.html" class="navigation_link">2022.4</a></li>
+        <li class="navigation_list_item"><a href="5.html" class="navigation_link">2022.5</a></li>
+        <li class="navigation_list_item"><a href="6.html" class="navigation_link">2022.6</a></li>
+        <li class="navigation_list_item"><a href="7.html" class="navigation_link">2022.7</a></li>
+        <li class="navigation_list_item"><a href="8.html" class="navigation_link">2022.8</a></li>
+        <li class="navigation_list_item"><a href="9.html" class="navigation_link">2022.9</a></li>
+        <li class="navigation_list_item"><a href="10.html" class="navigation_link">2022.10</a></li>
+        <li class="navigation_list_item"><a href="11.html" class="navigation_link">2022.11</a></li>
+      </ul>
+    </nav>
   </section>
   </header>
   <main>
   <!-- メインタイトル、サブタイトル、背景画像がある部分 -->
   <section class="keyvisual"> <!-- 背景・余白 -->
-  <div class=" main_inner inner">
-    <h1 class="main_title">WEB PPODUCTION COMPANY</h1>
-    <p class="sub_title">DIRECTION,CONTENT MARKTING</p>
+  <div class="inner">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <h1 class="main_title">わたあめ写真館</h1>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <p class="sub_title">Beloved Cat Photo Site</p>
   </div>
   </section>
-  <!-- 「WORK」のタイトルがある部分 -->
-  <section class="work"> <!-- 背景・余白 -->
-  <div class="work_inner inner">
-    <div class="pc">
-      <img src="./img/pc/pc.png" width="250px">
-    </div>
-    <div class="work_text">
-      <h2 class="work_main">WORK</h2>
-      <p class="work_sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint
+  <!-- 「PROFILE」のタイトルがある部分 -->
+  <section class="profile"> <!-- 背景・余白 -->
+  <div class="profile_inner inner">
+    <h2 class="profile_main">PROFILE</h2>
+    <div class="profile_text">
+      <p class="profile_sub">
+        <div class="ballon">
+          <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+          <p>
+            Name：わたあめ<br>
+            Birth：2022.11.10<br>
+            Gender：女の子<br>
+            Breed：サイベリアン<br>
+            Color：シルバータビー<br>
+            おっとり運動音痴な気まぐれ猫
+          </p>
+        </div>
       </p>
     </div>
+    <div class="picture">
+      <img src="./img/picture/picture.png" class="keyframe3" width="250px">
+    </div>
   </div>
   </section>
-  <!-- 「WE ARE SKILLS」のタイトルがある部分-->
-  <section class="skills"> <!-- 背景・余白 -->
+  <!-- 「PHOTOS」のタイトルがある部分-->
+  <section class="photo"> <!-- 背景・余白 -->
   <div class="inner">
-    <h2 class="skills_text">WE ARE SKILLS</h2>
-    <ul class="skills_list">
-      <li class="skills_item"><a href="#"><img src="./img/skills/skills_1.png" width="300px" height="300px" alt=""></a></li>
-      <li class="skills_item"><a href="#"><img src="./img/skills/skills_2.png" width="300px" height="300px" alt=""></a></li>
-      <li class="skills_item"><a href="#"><img src="./img/skills/skills_3.png" width="300px" height="300px" alt=""></a></li>
-      <li class="skills_item"><a href="#"><img src="./img/skills/skills_4.png" width="300px" height="300px" alt=""></a></li>
-      <li class="skills_item"><a href="#"><img src="./img/skills/skills_5.png" width="300px" height="300px" alt=""></a></li>
-      <li class="skills_item"><a href="#"><img src="./img/skills/skills_6.png" width="300px" height="300px" alt=""></a></li>
+    <h2 class="photo_text">PHOTOS</h2>
+    <ul class="photo_list">
+      <li class="photo_item"><a href="3.html"><img src="./img/photo/1-1.jpg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="4.html"><img src="./img/photo/13-1.jpeg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="5.html"><img src="./img/photo/28-1.jpg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="6.html"><img src="./img/photo/31-1.jpg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="7.html"><img src="./img/photo/48-1.jpg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="8.html"><img src="./img/photo/51-1.jpg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="9.html"><img src="./img/photo/61-1.jpg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="10.html"><img src="./img/photo/77-1.jpg" width="300px" height="300px" alt=""></a></li>
+      <li class="photo_item"><a href="11.html"><img src="./img/photo/82-1.jpg" width="300px" height="300px" alt=""></a></li>
     </ul>
   </div>
   </section>
-  <!-- 「SELECT PLAN」のタイトルがある部分 -->
-  <section class="plan"> <!-- 背景・余白 -->
-  <div class="inner">
-    <h2 class="plan_text">SELECT PLAN</h2>
-    <table class="plan_table">
-      <thead>
-        <tr>
-          <th>PLAN</th>
-          <th>BASIC PLAN</th>
-          <th>STANDARD PLAN</th>
-          <th>ENTERPRISE PLAN</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>PRICE</td>
-          <td>¥100,000</td>
-          <td>¥200,000</td>
-          <td>¥300,000</td>
-        </tr>
-        <tr>
-          <td>DELIVERY</td>
-          <td>Manuscript</td>
-          <td>HTML</td>
-          <td>Manuscript,HTML,PSD</td>
-        </tr>
-        <tr>
-          <td>ANALYSIS</td>
-          <td>○</td>
-          <td>○</td>
-          <td>○</td>
-        </tr>
-        <tr>
-          <td>IMPROVEMENT</td>
-          <td>×</td>
-          <td>○</td>
-          <td>○</td>
-        </tr>
-        <tr>
-          <td>DESIGN</td>
-          <td>×</td>
-          <td>×</td>
-          <td>○</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  </section>
+
   <!-- iconが並んでいる部分 -->
   <nav class="sns"> <!-- 背景・余白 -->
   <i class="fab fa-facebook-f sns_icon"></i>
@@ -125,14 +107,7 @@
     <p class="copyright">Copyright(c)</p>
   </div>
   </footer>
-
-  <!-- Wrokの部分のテキストはこちらを使ってください -->
-  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-  dolore magna
-  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis
-  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-  sint -->
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
